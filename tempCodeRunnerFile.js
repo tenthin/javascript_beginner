@@ -1,1 +1,1 @@
-push
+ourArray.shift();
