@@ -47,3 +47,19 @@ lastNameLength = lastName.length;
 console.log(lastNameLength);
 
 
+// find first character in String
+var firstLetterOfFirstName = "";
+var firstName = "tenzin";
+firstLetterOfFirstName = firstName[0];
+console.log(firstLetterOfFirstName);
+
+var firstLetterOfLastName = "";
+var lastName = "don";
+firstLetterOfLastName = lastName[0];
+console.log(firstLetterOfLastName);
+
+// Bracket Notation to Find Nth-to-Last Character in String
+var firstName = "ada";
+var thirdToLastLetterOfFirstName = firstName[firstName.length - 2];
+console.log(thirdToLastLetterOfFirstName);
+
