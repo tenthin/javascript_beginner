@@ -23,3 +23,15 @@ function testGreaterOrEqual(val) {
     return "less than 10";
 }
 console.log(testGreaterOrEqual(9));
+
+// Less Than or Equal to OPerator
+function testLessThan(val) {
+    if (val < 25) {
+        return "Under 25";
+    }
+    if (val<55 ) {
+        return "Under 55";
+    }
+    return "55 or OVer";
+}
+console.log(testLessThan(60))
