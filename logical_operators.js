@@ -34,4 +34,17 @@ function testLessThan(val) {
     }
     return "55 or OVer";
 }
-console.log(testLessThan(60))
+console.log(testLessThan(60));
+
+
+// Less than and equal to operator
+function testLessOrEqual(val) {
+    if (val <= 12) {
+        return "Smaller than or equal to 12";
+    }
+    if (val <= 24) {
+        return "Smaller than or equal to 24";
+    }
+    return "More than 24";
+}
+console.log(testLessOrEqual(34));
