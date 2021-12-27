@@ -85,3 +85,17 @@ var ourDog = {
 delete ourDog.bark;
 console.log(ourDog)
 
+// Using Objects from Lookups
+function phoneticLookup(val) {
+    var result = "";
+
+    var lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "Charlie": "Chicago",
+        "delta" : "Denver"
+    };
+    result = lookup[val];
+    return result;
+}
+console.log(phoneticLookup("alpha"));
