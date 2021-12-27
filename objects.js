@@ -38,3 +38,50 @@ var drinkValue = testObj["the drink"];
 
 console.log(entreeValue);
 console.log(drinkValue);
+
+
+// Accessing object properties with variables
+var testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+};
+
+var playerNumber = 16;
+var player = testObj[playerNumber];
+console.log(player)
+
+// UPdating Object properties
+var ourDog = {
+    "name": "Camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything"]
+};
+ourDog.name = "happy"
+console.log(ourDog);
+
+// Add New Properties to an object
+var ourDog = {
+    "name": "Camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything"]
+};
+
+ourDog.bark = "bow-wow";
+ourDog['barks'] = "woof";
+console.log(ourDog);
+
+// Delete properties from objects
+var ourDog = {
+        "name": 'Camper',
+        "legs": 4,
+        "tails": 1,
+        "friends": [ 'everything' ],
+        "bark": 'bow-wow',
+        "barks": 'woof'
+};
+delete ourDog.bark;
+console.log(ourDog)
+
