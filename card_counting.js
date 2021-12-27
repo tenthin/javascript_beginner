@@ -28,4 +28,5 @@ function cardgame(card) {
     return count + " " + holdbet;
 
 }
-console.log(cardgame(10))
+cardgame(2); cardgame(2); cardgame(2); cardgame(2); cardgame(2); 
+console.log(cardgame(2))
