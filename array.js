@@ -63,5 +63,5 @@ function updateRecords(id, prop, value) {
     return collection;
 
 }
-
+console.log(updateRecords(2468, "tracks", "test"));
 console.log(updateRecords(5439, "artist", "ABBA"));
