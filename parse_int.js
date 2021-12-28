@@ -12,4 +12,24 @@ function convertToInteger(str) {
 }
 console.log(convertToInteger("100011"));
 
-// 
+// Use the conditional (Ternary) OPerator
+// condition ? statement-if-true : statement-if-false;
+
+function checkEqual (a,b) {
+    // if(a == b) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    return a === b ? true : false;
+    return a === b;
+}
+console.log(checkEqual(2,3))
+
+
+// Use Multiple Conditional (Ternary) Operator
+function checkSign(num) {
+    return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+
+}
+console.log(checkSign(-10));
