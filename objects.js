@@ -99,3 +99,24 @@ function phoneticLookup(val) {
     return result;
 }
 console.log(phoneticLookup("alpha"));
+
+
+// Testing Objects for Properties
+var myObj = {
+    gift: "pony",
+    pet: "kitten",
+    bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+
+    if (myObj.hasOwnProperty(checkProp)) {
+
+        return myObj[checkProp];
+    } else {
+
+        return "not found";
+}
+}
+
+console.log(checkObj("gift"));
