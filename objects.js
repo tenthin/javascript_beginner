@@ -119,4 +119,47 @@ function checkObj(checkProp) {
 }
 }
 
-console.log(checkObj("gift"));
+console.log(checkObj("hello"));
+
+
+// Manipulating complex Objects
+var myMusic = [
+{
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+        "CD",
+        "8T",
+        "LP"
+    ],
+    "gold": true
+},
+
+{
+    "artist": "Beau Carnes",
+    "title": "Cereal Man",
+    "release_year": 2003,
+    "formats": [
+        "YouTube Video",
+    ]
+}
+
+]
+console.log(myMusic)
+
+// Accessing Nested Objects
+var myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passanger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
+
+var gloveBoxContent = myStorage.car.inside["glove box"];
+console.log(gloveBoxContent)
