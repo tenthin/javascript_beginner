@@ -1,11 +1,7 @@
-function printManyTimes() {
-    "use strict";
-    var sentence = str + "is cool";
-
-    sentence = str + "is amazing";
-
-    for (var i = 0; i < str.length; i+=2) {
-        console.log(sentence);
+const increment = (function () {
+    return function increment(number, value = 1) {
+        return number + value;
     }
-}
-printManyTimes("freeCodeCamp");
+})();
+console.log(increment(5,2));
+console.log(increment(5))
