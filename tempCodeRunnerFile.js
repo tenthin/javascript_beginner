@@ -1,15 +1,10 @@
-const result = {
-    success: ["max-length", "no-amd", "prefer-arrow-functions"],
-    failure: ["no-var", "var-on-top", "linebreak"],
-    skipped: ["id-blacklist", "no-dup-keys"]
-};
-function makeList(arr) {
-    const resultDisplayArray = [];
-    for (let i = 0; i < arr.length; i++) {
-        resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)
+const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+    // setGear: function(newGear) {
+        "use strict";
+        this.gear = newGear;
     }
-    return resultDisplayArray;
-}
-
-const resultDisplayArray = makeList(result.failure)
-console.log(resultDisplayArray)
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
