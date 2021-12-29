@@ -30,18 +30,28 @@ console.log(catTalk())
 
 //COmpare Scopes of the var and let keyword
 
+// function checkScope() {
+// "use strict";
+//     let i = "function scope";
+//     if (true) {
+//         let i = "block scope";
+//         console.log("block scope i is: ", i);
+//     }
+//     console.log("function scope i is: ", i);
+//     return i;
+// }
+// checkScope();
+
 function checkScope() {
 "use strict";
-    var i = "function scope";
+    let i = "function scope";
     if (true) {
-        i = "block scope";
+        let i = "block space";
         console.log("block scope i is: ", i);
     }
     console.log("function scope i is: ", i);
     return i;
 }
-checkScope("function scope");
+checkScope()
 
-
-
-
+  //Declare a Read-Only Variable with the const keyword
