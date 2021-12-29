@@ -1,3 +1,18 @@
+
+class SpaceShuttle {
+    constructor(targetPlanet){
+        // var SpaceShuttle = function(targetPlanet) {
+        this.targetPlanet = targetPlanet;
+    }
+}
+
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetPlanet)
+
+
+
+
 function makeClass() {
     class Vegetable {
         constructor(name) {
