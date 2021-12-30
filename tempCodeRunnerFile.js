@@ -1,12 +1,14 @@
-function makeClass() {
-    class Vegetable {
-        constructor(name) {
-            this.name = name;
-        }
+const person = {
+    firstName: "Mosh",
+    lastName: "Hamedani",
+    get fullName() {
+        return `${person.firstName} ${person.lastName}`
+    },
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
     }
-    return Vegetable;
-}
-
-const Vegetable = makeClass();
-const carrot = new Vegetable('carrot');
-console.log(carrot.name);
+};
+person.fullName = 'John Smith';
+console.log(person.fullName)
